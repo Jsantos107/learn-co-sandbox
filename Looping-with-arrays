@@ -1,0 +1,38 @@
+counter = 0
+pets = ["Dog", "Cat", "Fish", "Bird", "Hamster"]
+ 
+while pets[counter] do
+  puts pets[counter]
+  counter += 1
+end
+
+#=> Will output:
+Dog
+Cat
+Fish
+Bird
+Hamster
+This is an example of abstracting array output very basic example a while loop with a counter
+
+
+
+def output_array_elements(array)
+  counter = 0
+ 
+  while array[counter] do
+    puts array[counter]
+    counter += 1
+  end
+end
+pets = ["Dog", "Cat", "Fish", "Bird", "Hamster"]
+output_array_elements(pets)
+
+
+def output_array_elements(array)
+  counter = 0
+ 
+  while counter < array.length do
+    puts array[counter]
+    counter += 1
+  end
+end

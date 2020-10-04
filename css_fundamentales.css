@@ -1,0 +1,39 @@
+/*inline, internal (or embedded) and external.*/
+
+<p style="color: blue;"></p>
+/*inline--It only affects that single element.*/
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p { color: blue; }
+    </style>
+  </head>
+  <body>
+ 
+  <p>This is a paragraph.</p>
+ 
+  </body>
+</html>
+/*internal (or embedded) -- This rule will display all paragraphs in this document as blue*/
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+ 
+  <p>This is a paragraph.</p>
+ 
+  </body>
+</html>
+/* external.--With the link tag, we can use the relation attribute to define the target as a style sheet and the link source our CSS file that contains all the CSS we want to use on our site. This is by far the easiest way to link CSS to HTML and apply styles across all of our pages.*/
+
+
+/*ID and Class Selectors */
+p#introduction {
+  color: blue;
+}
+/*ID selectors target all elements with a specific ID attribute value. */
